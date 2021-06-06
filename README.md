@@ -58,3 +58,14 @@ Where:
 * `--output-to main.js` specifies the output file
 
 Run with `node main.js`
+
+## Running tests
+
+To run tests, you must compile then call node
+
+```shell
+clj -A:test -M -m cljs.main --target node --output-to test.js -c hello-world.test-runner && node test.js
+```
+
+Where:
+* `-A:test` active `:test` alias
