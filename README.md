@@ -41,5 +41,20 @@ This command will:
 To serve the `out/main.js` file, run:
 
 ```shell
-clj -M -m cljs/main --serve
+clj -M -m cljs.main --serve
 ```
+
+## Compiling to node
+
+Run the following command:
+
+```shell
+clj -M -m cljs.main --target node --output-to main.js -c hello-world.core
+```
+
+Where:
+
+* `--target node` specifies node as the environment, defaults to browser
+* `--output-to main.js` specifies the output file
+
+Run with `node main.js`
