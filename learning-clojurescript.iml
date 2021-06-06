@@ -17,11 +17,13 @@
     <orderEntry type="library" name="Deps: org.clojure/core.specs.alpha:0.2.44" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/spec.alpha:0.2.176" level="project" />
     <orderEntry type="library" name="Deps: org.codehaus.mojo/animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" name="Deps: cljsjs/react-dom:16.2.0-3" level="project" />
     <orderEntry type="library" name="Deps: com.googlecode.json-simple/json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/google-closure-library:0.0-20191016-6ae1f72f" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/clojurescript:1.10.758" level="project" />
     <orderEntry type="library" name="Deps: com.google.jsinterop/jsinterop-annotations:1.0.2" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-core:2.8.7" level="project" />
+    <orderEntry type="library" name="Deps: cljsjs/react:16.2.0-3" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/google-closure-library-third-party:0.0-20191016-6ae1f72f" level="project" />
     <orderEntry type="library" name="Deps: com.google.javascript/closure-compiler-externs:v20200315" level="project" />
     <orderEntry type="library" name="Deps: org.javassist/javassist:3.18.1-GA" level="project" />
