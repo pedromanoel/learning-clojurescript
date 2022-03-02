@@ -3,3 +3,7 @@ out
 .cpcache
 node_modules
 .cljs_node_repl
+.clj-kondo/.cache
+.lsp/.cache
+.nrepl-port
+.calva/

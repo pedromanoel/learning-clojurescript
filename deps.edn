@@ -1,7 +1,18 @@
 {:paths ["src/main"]
 
- :deps  {org.clojure/clojurescript {:mvn/version "1.10.758"}
-         cljsjs/react-dom          {:mvn/version "16.2.0-3"}}
+ :deps  {org.clojure/clojurescript {:mvn/version "1.11.4"}
+         cljsjs/react-dom          {:mvn/version "18.0.0-rc.0-0"}}
 
  :aliases {:test
-           {:extra-paths ["src/test"]}}}
+           {:extra-paths ["src/test"]}
+
+           ;; calling 'clj -Mhello/compile' is the same as calling clj -M -m cljs.main -c hello-world.core
+           :hello/compile
+           {:main-opts ["-m" "cljs.main"
+                        "-c" "hello-world.core"]}
+           
+           ;; calling 'clj -Mhello/repl' is the same as calling clj -M -m cljs.main -c hello-world.core -r
+           :hello/repl
+           {:main-opts ["-m" "cljs.main"
+                        "-c" "hello-world.core"
+                        "-r"]}}}
