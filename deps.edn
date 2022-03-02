@@ -4,15 +4,30 @@
          cljsjs/react-dom          {:mvn/version "18.0.0-rc.0-0"}}
 
  :aliases {:test
-           {:extra-paths ["src/test"]}
+           {:extra-paths ["src/test"]
+            :main-opts ["-m" "cljs.main"
+                        "--target" "node"
+                        "--output-to" "test.js"
+                        "-c" "hello-world.test-runner"]}
 
-           ;; calling 'clj -Mhello/compile' is the same as calling clj -M -m cljs.main -c hello-world.core
-           :hello/compile
+           :compile/browser
            {:main-opts ["-m" "cljs.main"
                         "-c" "hello-world.core"]}
-           
-           ;; calling 'clj -Mhello/repl' is the same as calling clj -M -m cljs.main -c hello-world.core -r
-           :hello/repl
+
+           :compile/node
            {:main-opts ["-m" "cljs.main"
-                        "-c" "hello-world.core"
-                        "-r"]}}}
+                        "--target" "node"
+                        "--output-to" "main.js"
+                        "-c" "hello-world.core"]}
+
+           :compile/prod
+           {:main-opts ["-m" "cljs.main"
+                        "-O" "advanced"
+                        "-c" "hello-world.core"]}
+
+           :dev/serve
+           {:main-opts ["-m" "cljs.main" "--serve"]}
+           
+           :dev/repl
+           {:main-opts ["-m" "cljs.main"
+                        "-c" "hello-world.core" "-r"]}}}
